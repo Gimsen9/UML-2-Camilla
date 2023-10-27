@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using UML;
+using UML_2_Camilla;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UML_2_Camilla
 {
-    internal class Customer
+    public class Customer
     {
         #region Properties of a Customer
         public int Phone { get; }
@@ -31,6 +33,11 @@ namespace UML_2_Camilla
             Address = address;
         }
         #endregion
+
+        public override string ToString()
+        {
+            return $"{Phone} {Name} \t {Email} \t{MemberStatus} \t {Address}";
+        }
     }
 }
 

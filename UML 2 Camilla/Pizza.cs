@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UML_2_Camilla
 {
-    internal class Pizza
+    public class Pizza
     {
         #region Properties of a Pizza
         public string Number { get; } //Number is a string, as some pizzarias have a number 22a or so forth.
@@ -23,8 +23,13 @@ namespace UML_2_Camilla
             Name = name;
             Size = size;
             Bottom = bottom;
-            Ingredients = ingredients;  
+            Ingredients = ingredients;
         }
         #endregion
+
+        public override string ToString()
+        {
+            return $"{Number} {Name} \t {Size} \t{Bottom} \t {Ingredients}";
+        }
     }
 }

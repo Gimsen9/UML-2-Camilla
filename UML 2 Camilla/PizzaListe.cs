@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UML_2_Camilla
 {
-    internal class PizzaListe
+    public class PizzaListe
     {
 
         #region Instance fields
@@ -48,11 +48,23 @@ namespace UML_2_Camilla
 
         public void UpdatePizza(string number, Pizza aPizza)
         {
-           
-                _pizza[number] = aPizza;         
+
+            _pizza[number] = aPizza;
 
 
-                    }
+        }
+        public void PrintPizza()
+        {
+
+            foreach(var pizza in _pizza)
+            {
+                Console.WriteLine(pizza.Value.ToString());
+
+            }
+
+
+
+        }
         #endregion
     }
-}
+    }
