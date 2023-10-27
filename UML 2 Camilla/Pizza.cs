@@ -11,8 +11,8 @@ namespace UML_2_Camilla
         #region Properties of a Pizza
         public string Number { get; } //Number is a string, as some pizzarias have a number 22a or so forth.
         public string Name { get; }
-        public int Size { get; }
-        public int Bottom { get; }
+        public int Size { get; } //This is a placeholder for now.
+        public int Bottom { get; }//This is also a placeholder for now.
         public string Ingredients { get; }
         #endregion
 

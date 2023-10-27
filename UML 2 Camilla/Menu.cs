@@ -72,42 +72,42 @@ namespace UML_2_Camilla
                         Console.WriteLine("Print Menuen");
                         _pizzaListe.PrintPizza();
                         break;
-                    case 3: // todo
+                    case 3: // Metode der lader dig søge efter en Pizza i Pizza Menuen (Pizzalisten) ud fra deres nummer.
                         Console.Clear();
                         SearchPizzaMenu();
                         break;
                     case 4:
                         Console.Clear();
-                        //Console.WriteLine("To be implemented!");
+                        //Metode der sletter pizzaer fra menuen.
                         DeletePizzaFromMenu();
                         break;
                     case 5:
-                        //
+                        //Metode der opdaterer Pizzaer på menuen.
                         Console.Clear();
                         UpdatePizzaMenu();
                         break;
                     case 6:
-                        // TODO
+                        // Metode der opdaterer kunder på kundelisten.
                         Console.Clear();
                         UpdateCustomerList();
                         break;
                     case 7:
-                        // TODO
+                        // Metode der tilføjer kunder til kundelisten.
                         Console.Clear();
                         AddCustomerToList();
                         break;
                     case 8:
-                        // TODO
+                        // Metode der kan søge efter kunder ud fra deres navn.
                         Console.Clear();
                         SearchCustomerListe();
                         break;
                     case 9:
-                        // TODO
+                        // Metode der sletter kunder fra kundelisten.
                         Console.Clear();
                         DeleteCustomerFromList();
                         break;
                     case 10:
-                        // TODO
+                        // Metode der printer listen af kunder. Dette er dog lidt Iffy GDPR mæssigt.
                         Console.Clear();
                         Console.WriteLine("Print Kundeliste");
                         _customerListe.PrintCustomer();
